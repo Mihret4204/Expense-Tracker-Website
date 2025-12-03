@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BirrFlow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dashboard-page">
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-wallet"></i>
+            <span>BirrFlow</span>
+        </div>
+        <div class="nav-links">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="add-transaction.html">Add</a>
+            <a href="history.html">History</a>
+            <a href="about-us.html">About us</a>
+            <a href="index.html">Login</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Welcome back!</h1>
+            <p class="date">Today, november 27, 2025</p>
+        </header>
+        <section class="balance-section">
+            <div class="balance-card">
+                <h2>Total Balance</h2>
+                <div class="balance-amount">ETB 10,000</div>
+                <div class="balance-change positive">
+                    <i class="fas fa-arrow-up"></i> +12.5% this month
+                </div>
+            </div>
+            
+            <div class="mini-cards">
+                <div class="mini-card income">
+                    <i class="fas fa-arrow-trend-up"></i>
+                    <div class="card-info">
+                        <p class="card-label">Income</p>
+                        <p class="card-value">ETB 30,000.00</p>
+                    </div>
+                </div>
+                <div class="mini-card expense">
+                    <i class="fas fa-arrow-trend-down"></i>
+                    <div class="card-info">
+                        <p class="card-label">Expenses</p>
+                        <p class="card-value">ETB 15,000.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="action-buttons">
+                <a href="add-transaction.html" class="action-btn add-expense">
+                    <i class="fas fa-minus-circle"></i>
+                    <span>Add Expense</span>
+                </a><br>
+                <a href="add-transaction.html" class="action-btn add-income">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Add Income</span>
+                </a><br>
+                <a href="history.html" class="action-btn view-history">
+                    <i class="fas fa-chart-line"></i>
+                    <span>View History</span>
+                </a>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BirrFlow</h3>
+                <p>Your trusted expense tracking companion for managing finances in Ethiopia and beyond.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="add-transaction.html">Add Transaction</a></li>
+                    <li><a href="history.html">Transaction History</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@birrflow.com</li>
+                    <li><i class="fas fa-phone"></i> +251 900 000 000</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 5kilo, Addis Ababa, Ethiopia</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 BirrFlow. All rights reserved. Made in Ethiopia.</p>
+        </div>
+    </footer>
+</body>
+</html>

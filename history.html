@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - BirrFlow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="history-page">
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-wallet"></i>
+            <span>BirrFlow</span>
+        </div>
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="add-transaction.html">Add</a>
+            <a href="history.html" class="active">History</a>
+            <a href="about-us.html">About us</a>
+            <a href="index.html">Login</a>
+        </div>
+    </nav>
+
+    <main class="history-container">
+        <header class="page-header">
+            <h1>Transaction History</h1>
+            <p>View and manage all your transactions</p>
+        </header>
+
+        <section class="filters-section">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All</button>
+                <button class="filter-tab" data-filter="income">Income</button>
+                <button class="filter-tab" data-filter="expenses">Expenses</button>
+            </div>
+
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="category-filter">Category</label>
+                    <select id="category-filter">
+                        <option value="food"><i class="fas fa-utensils"></i> Food & Dining</option>
+                        <option value="groceries"><i class="fas fa-shopping-cart"></i> Groceries</option>
+                        <option value="transportation"><i class="fas fa-car"></i> Transportation</option>
+                        <option value="shopping"><i class="fas fa-shopping-bag"></i> Shopping</option>
+                        <option value="entertainment"><i class="fas fa-film"></i> Entertainment</option>
+                        <option value="bills"><i class="fas fa-file-invoice"></i> Bills & Utilities</option>
+                        <option value="healthcare"><i class="fas fa-heart-pulse"></i> Healthcare</option>                            <option value="education"><i class="fas fa-graduation-cap"></i> Education</option>
+                        <option value="other"><i class="fas fa-box"></i> Other</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="date-range">Date Range</label>
+                    <select id="date-range">
+                        <option value="today">Today</option>
+                        <option value="week">This Week</option>
+                        <option value="month" selected>This Month</option>
+                        <option value="year">This Year</option>
+                        <option value="all">All Time</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="sort-by">Sort By</label>
+                    <select id="sort-by">
+                        <option value="date-desc" selected>Date (Newest)</option>
+                        <option value="date-asc">Date (Oldest)</option>
+                        <option value="amount-desc">Amount (High to Low)</option>
+                        <option value="amount-asc">Amount (Low to High)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="summary-info">
+                        <p class="summary-label">Total Transactions</p>
+                        <p class="summary-value">47</p>
+                    </div>
+                </div>
+                <div class="summary-card income">
+                    <i class="fas fa-arrow-trend-up"></i>
+                    <div class="summary-info">
+                        <p class="summary-label">Total Income</p>
+                        <p class="summary-value">ETB 30,000.00</p>
+                    </div>
+                </div>
+                <div class="summary-card expense">
+                    <i class="fas fa-arrow-trend-down"></i>
+                    <div class="summary-info">
+                        <p class="summary-label">Total Expenses</p>
+                        <p class="summary-value">ETB 15,000.00</p>
+                    </div>
+                </div>
+                <div class="summary-card balance">
+                    <i class="fas fa-wallet"></i>
+                    <div class="summary-info">
+                        <p class="summary-label">Net Balance</p>
+                        <p class="summary-value">ETB 15,000.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="transactions-list">
+            <div class="list-header">
+                <br>
+                <h3>Transactions</h3>
+                <button class="export-btn">Export CSV</button>
+            </div>
+
+            <div class="transaction-items">
+                <div class="transaction-item expense">
+                    <div class="transaction-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="transaction-details">
+                        <p class="transaction-title">Grocery Shopping</p>
+                        <p class="transaction-category">Food & Groceries</p>
+                        <p class="transaction-date">Today, 2:30 PM</p>
+                    </div>
+                    <div class="transaction-amount negative">-ETB 943.43</div>
+                    <div class="transaction-actions">
+                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="transaction-item income">
+                    <div class="transaction-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="transaction-details">
+                        <p class="transaction-title">Salary</p>
+                        <p class="transaction-category">Income</p>
+                        <p class="transaction-date">Yesterday, 9:00 AM</p>
+                    </div>
+                    <div class="transaction-amount positive">+ETB 1,000.00</div>
+                    <div class="transaction-actions">
+                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="transaction-item expense">
+                    <div class="transaction-icon"><i class="fas fa-gas-pump"></i></div>
+                    <div class="transaction-details">
+                        <p class="transaction-title">Gas Station</p>
+                        <p class="transaction-category">Transportation</p>
+                        <p class="transaction-date">Yesterday, 6:15 PM</p>
+                    </div>
+                    <div class="transaction-amount negative">-ETB 600.00</div>
+                    <div class="transaction-actions">
+                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="transaction-item expense">
+                    <div class="transaction-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="transaction-details">
+                        <p class="transaction-title">Restaurant</p>
+                        <p class="transaction-category">Food & Dining</p>
+                        <p class="transaction-date">Nov 27, 7:30 PM</p>
+                    </div>
+                    <div class="transaction-amount negative">-ETB 875.00</div>
+                    <div class="transaction-actions">
+                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="transaction-item income">
+                    <div class="transaction-icon"><i class="fas fa-laptop"></i></div>
+                    <div class="transaction-details">
+                        <p class="transaction-title">Freelance Project</p>
+                        <p class="transaction-category">Freelance</p>
+                        <p class="transaction-date">Nov 26, 3:00 PM</p>
+                    </div>
+                    <div class="transaction-amount positive">+ETB 4,500.00</div>
+                    <div class="transaction-actions">
+                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="transaction-item expense">
+                    <div class="transaction-icon"><i class="fas fa-film"></i></div>
+                    <div class="transaction-details">
+                        <p class="transaction-title">Movie Tickets</p>
+                        <p class="transaction-category">Entertainment</p>
+                        <p class="transaction-date">Nov 25, 8:00 PM</p>
+                    </div>
+                    <div class="transaction-amount negative">-ETB 616.00</div>
+                    <div class="transaction-actions">
+                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more">
+                <button class="btn-secondary">Load More Transactions</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BirrFlow</h3>
+                <p>Your trusted expense tracking companion for managing finances in Ethiopia and beyond.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="add-transaction.html">Add Transaction</a></li>
+                    <li><a href="history.html">Transaction History</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@birrflow.com</li>
+                    <li><i class="fas fa-phone"></i> +251 900 000 000</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 5kilo, Addis Ababa, Ethiopia</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 BirrFlow. All rights reserved. Made in Ethiopia.</p>
+        </div>
+    </footer>
+</body>
+</html>
