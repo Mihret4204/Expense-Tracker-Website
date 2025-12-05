@@ -1,4 +1,4 @@
-BirrFlow – Personal Expense Tracker
+BirrFlow -Personal Expense Tracker
 
 BirrFlow is a simple, modern, and responsive personal finance tracking web app designed to help users manage income and expenses efficiently.
 Built with HTML, CSS, and Font Awesome, BirrFlow provides a clean interface for tracking finances in Ethiopia and beyond.
@@ -47,13 +47,13 @@ Google Fonts (Inter)
 
  Project Structure
 /Expense-Tracker-Website
-│── index.html
-│── dashboard.html
-│── add-transaction.html
-│── history.html
-│── about-us.html
-│── styles.css
-│── README.md
+│--index.html
+│--dashboard.html
+│-- add-transaction.html
+│-- history.html
+│-- about-us.html
+│-- styles.css
+│-- README.md
 
  Technologies Used
 HTML5
@@ -68,7 +68,7 @@ git clone https://github.com/yourusername/Expense-Tracker-Website.git
 Open the folder:
 cd Expense-Tracker-Website
 Open index.html in any browser:
-Right-click → Open With → Chrome/Firefox/Edge
+Right click → Open With → Chrome/Firefox/Edge
 No backend required — the project runs 100% on the browser.
 
  Contributors
