@@ -55,23 +55,14 @@ Google Fonts (Inter)
 │-- styles.css
 │-- README.md
 
- Technologies Used
+#Technologies Used
 HTML5
 CSS3
 Font Awesome Icons
 Google Fonts (Inter)
 Responsive Web Design
 
-How to Run the Project
-Clone the repository:
-git clone https://github.com/yourusername/Expense-Tracker-Website.git
-Open the folder:
-cd Expense-Tracker-Website
-Open index.html in any browser:
-Right click → Open With → Chrome/Firefox/Edge
-No backend required — the project runs 100% on the browser.
-
- Contributors
+# Contributors
 Mihret Tena
 UI development
 Dashboard & Login page design
