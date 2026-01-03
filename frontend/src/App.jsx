@@ -1,5 +1,10 @@
-function welcomeMessage() {
-  return `Welcome to our application!`;
-}
+import Layout from "./components/Layout";
+function App(){
+  return (
+    
+    <Layout />
+     
+  )
+};
 
-export default welcomeMessage;
+export default App;
