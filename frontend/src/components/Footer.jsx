@@ -17,11 +17,11 @@ function Footer() {
             
             <div className="footer-section">
                 <h4>Quick Links</h4>
-                <ul>
-                    <li><Link to="/">Dashboard</Link></li>
-                    <li><Link to="/">Add Transaction</Link></li>
-                    <li><Link to="/">Transaction History</Link></li>
-                    <li><Link to="/">About Us</Link></li>
+                <ul>                     
+                    <li><Link to="/dashBoard">Dashboard</Link></li>
+                    <li><Link to="/add-transaction">Add Transaction</Link></li>
+                    <li><Link to="/history">Transaction History</Link></li>
+                    <li><Link to="/about-us">About Us</Link></li>
                 </ul>
             </div>
             
