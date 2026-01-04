@@ -1,17 +1,18 @@
+import  '../styles/styles.css';
 function Header(){
     return(
         <>
-        <nav class="navbar">
-        <div class="nav-brand">
-            <i class="fas fa-wallet"></i>
+        <nav className="navbar">
+        <div className="nav-brand">
+            <i className="fas fa-wallet"></i>
             <span>BirrFlow</span>
         </div>
-        <div class="nav-links">
-            <a href="dashboard.js">Dashboard</a>
-            <a href="add-transaction.js">Add</a>
-            <a href="history.js" class="active">History</a>
-            <a href="about-us.js">About us</a>
-            <a href="index.js">Login</a>
+        <div className="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Add</a>
+            <a href="#" class="active">History</a>
+            <a href="#">About us</a>
+            <a href="#">Login</a>
         </div>
         </nav>
         </>
