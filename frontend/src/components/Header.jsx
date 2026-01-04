@@ -1,4 +1,5 @@
 import  '../styles/styles.css';
+import { Link } from 'react-router-dom';
 function Header(){
     return(
         <>
@@ -8,11 +9,11 @@ function Header(){
             <span>BirrFlow</span>
         </div>
         <div className="nav-links">
-            <a href="#">Dashboard</a>
-            <a href="#">Add</a>
-            <a href="#" class="active">History</a>
-            <a href="#">About us</a>
-            <a href="#">Login</a>
+            <Link to="/">Dashboard</Link>
+            <Link to="/">Add</Link>
+            <Link to="/">History</Link>
+            <Link to="/">About us</Link>
+            <Link to="/">Login</Link>
         </div>
         </nav>
         </>
