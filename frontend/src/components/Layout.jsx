@@ -1,12 +1,11 @@
-import Home from '../pages/Home.jsx';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
-function Layout() {
+function Layout({children}) {
     return (
         <>
         <Header/>
         <main>
-            <Home />
+            {children}
         </main>
         <Footer/>
         </>
